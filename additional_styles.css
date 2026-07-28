@@ -472,9 +472,9 @@ h3 {
 .profile-image {
     position: relative;
     width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: top center;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    object-position: center;
     border-radius: var(--radius);
     background: var(--surface-2);
     transition: transform 260ms ease, filter 260ms ease;
