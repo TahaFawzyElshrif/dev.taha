@@ -213,23 +213,23 @@
                     <p class="project-type">Reinforcement learning + IoT + computer vision</p>
                     <h3>Traffic Manager</h3>
                     <p>
-                        <strong>Problem:</strong> static traffic signals cannot adapt well to changing road conditions,
-                        especially when emergency vehicles need priority.
+                        <strong>Problem:</strong> static traffic signals cannot adapt to current road conditions,
+                        contributing to congestion and limiting responsiveness when emergency vehicles need priority.
                     </p>
                     <p>
-                        <strong>Solution:</strong> designed a smart signal prototype trained on simulated Egyptian road
-                        networks, then connected the best-performing model to a prototype with real-time computer vision
-                        for speed estimation, IoT-based signal control, and a mobile emergency-alert flow.
+                        <strong>Solution:</strong> led a 10-member team to develop a smart traffic signal system trained
+                        through Simulation of Urban Mobility (SUMO) and integrated with an IoT prototype. The system
+                        used Reinforcement Learning to optimize signal timing, Computer Vision for traffic information,
+                        and a mobile emergency-alert flow, achieving an average waiting time of 21 seconds per 30 minutes
+                        while maintaining fairness.
                     </p>
                     <ul class="detail-list">
-                        <li><strong>Architecture:</strong> simulation and RL training, model evaluation, CV speed
-                            estimation, IoT controller, and mobile app integration.</li>
-                        <li><strong>Engineering decisions:</strong> used experimental design and ANOVA to compare
-                            models instead of relying on one training run.</li>
-                        <li><strong>Trade-offs:</strong> simulation enables controlled testing, while real roads would
-                            require more sensor reliability, safety validation, and deployment constraints.</li>
-                        <li><strong>Lessons:</strong> AI projects need system-level thinking: data, evaluation,
-                            hardware integration, latency, and fallback behavior all matter.</li>
+                        <li><strong>Architecture:</strong> SUMO simulation and RL training, model evaluation, Computer
+                            Vision, IoT signal control, FastAPI backend, and Flutter mobile integration.</li>
+                        <li><strong>Engineering decisions:</strong> used Analysis of Variance (ANOVA) to compare model
+                            performance and support evaluation beyond a single training run.</li>
+                        <li><strong>Team leadership:</strong> led a 10-member team across the development of the
+                            intelligent traffic-control system.</li>
                     </ul>
                     <div class="tech-tags">
                         <span>Reinforcement Learning</span><span>Computer Vision</span><span>IoT</span><span>Android</span><span>ANOVA</span>
@@ -250,23 +250,24 @@
                     <p class="project-type">LLM product + distributed backend</p>
                     <h3>CodeBuddy</h3>
                     <p>
-                        <strong>Problem:</strong> programming assistants become unreliable when prompts, retrieval,
-                        latency, and authentication are treated as UI-only concerns.
+                        <strong>Problem:</strong> beginner developers can get blocked by unclear programming questions,
+                        unsuitable explanations, and difficulty choosing learning resources or hardware within their
+                        constraints.
                     </p>
                     <p>
-                        <strong>Solution:</strong> built an AI assistant using FastAPI and Node.js microservices,
-                        Redis-based queueing with three consumers, task-state agent logic, RAG, Firebase JWT
-                        authentication, monitoring, caching, connection pooling, and CDN support.
+                        <strong>Solution:</strong> designed and implemented a full-stack AI learning platform that
+                        provides structured answers, personalized learning roadmaps, and hardware recommendations.
+                        Built a ReAct AI agent with RAG and tool integration, refined its handling of misunderstood and
+                        irrelevant queries, and manually tested LLM responses across 5 cases.
                     </p>
                     <ul class="detail-list">
-                        <li><strong>Scale claim from project:</strong> processed 1K+ daily requests through a queued
-                            architecture.</li>
-                        <li><strong>Architecture:</strong> frontend, AI service, queue, consumers, retrieval layer,
-                            authentication, monitoring, and deployment surface.</li>
-                        <li><strong>Trade-offs:</strong> queues add operational complexity, but they protect the user
-                            experience when LLM calls are slow or bursty.</li>
-                        <li><strong>AI positioning:</strong> LLM output is treated as a component to route, cache,
-                            validate, and monitor, not as a replacement for backend design.</li>
+                        <li><strong>Architecture:</strong> HTML, CSS, Bootstrap, and JavaScript frontend with a scalable
+                            backend using Clean Architecture, FastAPI, PostgreSQL, Redis queueing, encryption,
+                            deployment, and monitoring.</li>
+                        <li><strong>AI engineering:</strong> combined RAG, tools, and ReAct agent logic to improve
+                            retrieval and task handling rather than relying on raw LLM generation.</li>
+                        <li><strong>Validation:</strong> manually tested the LLM responses across 5 cases and refined
+                            handling of misunderstood and irrelevant queries.</li>
                     </ul>
                     <div class="tech-tags">
                         <span>FastAPI</span><span>Node.js</span><span>Redis</span><span>RAG</span><span>Firebase JWT</span><span>Sentry</span>
@@ -291,14 +292,15 @@
                     <p class="project-type">Cross-platform health assistant</p>
                     <h3>AidMate</h3>
                     <p>
-                        Built a first-aid application that combines health content with LLM assistance. The engineering
-                        challenge is reliability: health guidance needs careful content boundaries, clear UX, and
-                        validation instead of blind generation.
+                        Designed and developed an AI-powered first-aid assistant for providing initial guidance in urgent
+                        situations, with a focus on limiting responses to retrieved knowledge and clearly indicating the
+                        information source.
                     </p>
                     <ul class="detail-list compact">
-                        <li><strong>Stack:</strong> cross-platform app, LLM integration, health data.</li>
-                        <li><strong>Future improvement:</strong> add stronger source attribution, risk warnings, and
-                            offline-first emergency content.</li>
+                        <li><strong>AI:</strong> built an offline-capable RAG pipeline using TF-IDF semantic search,
+                            keeping responses grounded in retrieved knowledge.</li>
+                        <li><strong>Stack:</strong> FastAPI and Flutter for Android and Windows, with Provider for state
+                            management, Flutter Markdown, responsive UI, and customizable themes.</li>
                     </ul>
                     <div class="project-actions">
                         <a class="btn btn-secondary" href="https://github.com/TahaFawzyElshrif/AidMate"><i
@@ -315,15 +317,14 @@
                     <p class="project-type">Workflow automation + LLM agents</p>
                     <h3>AI Job Application Automation</h3>
                     <p>
-                        Designed an n8n-based recruitment assistant that analyzes jobs, customizes ATS-friendly CV
-                        drafts, prepares professional emails, and tracks structured data through Telegram and Google
-                        Sheets.
+                        Built an AI-powered n8n workflow that analyzes job descriptions and generates tailored CVs and
+                        emails based on predefined skills and experience, simplifying the application process.
                     </p>
                     <ul class="detail-list compact">
-                        <li><strong>Architecture:</strong> modular multi-agent workflow, structured processing, error
-                            monitoring, and orchestration.</li>
-                        <li><strong>Principle:</strong> AI accelerates repetitive preparation while the final judgment
-                            stays human-reviewed.</li>
+                        <li><strong>Automation:</strong> automated CV tailoring, professional email generation, and
+                            Google Sheets tracking.</li>
+                        <li><strong>Impact:</strong> significantly reduced the manual effort required for job
+                            applications through structured workflow orchestration.</li>
                     </ul>
                     <div class="project-actions">
                         <a class="btn btn-secondary" href="images/projects/screen.png"><i
@@ -336,13 +337,14 @@
                     <p class="project-type">Data analysis + reporting</p>
                     <h3>Egyptian Economic Analysis</h3>
                     <p>
-                        Analyzed GDP growth in Egypt from 1995 to 2018 and compared it with Africa, Saudi Arabia, and
-                        global averages. The analysis found Egypt's average GDP growth was approximately 5.3%.
+                        Analyzed key economic indicators, including GDP growth in Egypt from 1995 to 2018, and compared
+                        them with Africa, Saudi Arabia, and global averages. The analysis found Egypt's average GDP
+                        growth was approximately 5.3%.
                     </p>
                     <ul class="detail-list compact">
-                        <li><strong>Tools:</strong> Excel, Power BI, ETL, visualization, comparative analysis.</li>
-                        <li><strong>Lesson:</strong> analytical work is stronger when assumptions and comparison groups
-                            are explicit.</li>
+                        <li><strong>Tools:</strong> Power BI and Excel for data analysis and visualization.</li>
+                        <li><strong>Focus:</strong> comparative analysis of Egypt's economic performance against
+                            regional and global averages.</li>
                     </ul>
                     <div class="project-actions">
                         <a class="btn btn-secondary" href="Analysis.pdf"><i class="bi bi-file-earmark-pdf"></i>Report</a>
@@ -354,14 +356,15 @@
                     <p class="project-type">Streaming data + NLP support</p>
                     <h3>Xiaomi Social Analysis</h3>
                     <p>
-                        Performed real-time social-media complaint analysis using Kafka, Reddit, Python, and GPT,
-                        reporting 70% accuracy for diagnosing frequent user complaints.
+                        Performed real-time social media analysis to identify current issues and common customer
+                        complaints about popular Xiaomi products, and developed a sentiment analysis model achieving
+                        70% accuracy.
                     </p>
                     <ul class="detail-list compact">
-                        <li><strong>Architecture:</strong> streaming ingestion, text processing, GPT-assisted
-                            classification, and reporting.</li>
-                        <li><strong>Trade-off:</strong> GPT helps summarize noisy text, but accuracy still needs manual
-                            validation and error analysis.</li>
+                        <li><strong>Stack:</strong> Kafka, Reddit, Python, and GPT for data collection, analysis, and
+                            insight generation.</li>
+                        <li><strong>Engineering focus:</strong> streaming social data, complaint and sentiment
+                            analysis, and automated insight generation.</li>
                     </ul>
                     <div class="project-actions">
                         <a class="btn btn-secondary" href="Report_Xiaomi.pdf"><i
@@ -374,13 +377,14 @@
                     <p class="project-type">Android + computer vision API</p>
                     <h3>Pandas Background</h3>
                     <p>
-                        Built an Android app for removing or replacing image backgrounds and applying ToF camera effects
-                        through a computer-vision backend.
+                        Developed an end-to-end AI image processing system that removes or replaces image backgrounds,
+                        with processing times under 2 seconds on mobile devices.
                     </p>
                     <ul class="detail-list compact">
-                        <li><strong>Stack:</strong> Android, FastAPI, HttpClient, YOLO.</li>
+                        <li><strong>Stack:</strong> FastAPI and YOLO AI backend with a native Android frontend and
+                            responsive UI.</li>
                         <li><strong>Engineering focus:</strong> client-server image flow, inference integration, and
-                            usable mobile interaction.</li>
+                            efficient mobile image processing.</li>
                     </ul>
                     <div class="project-actions">
                         <a class="btn btn-secondary" href="https://github.com/TahaFawzyElshrif/Pandas_Background"><i
@@ -396,14 +400,15 @@
                     <p class="project-type">Android file system utility</p>
                     <h3>Mango Explorer</h3>
                     <p>
-                        Led development of an Android mini file explorer. I designed and developed the app, while the
-                        team handled most compression features.
+                        Designed and developed a lightweight, minimal, and modern Android file explorer with file
+                        browsing and creation features, while collaborating with a team to add text compression
+                        functionality.
                     </p>
                     <ul class="detail-list compact">
-                        <li><strong>Engineering focus:</strong> file navigation, Android UX, release packaging, and
+                        <li><strong>Stack:</strong> XML and Java for the responsive Android UI, with Python used for
+                            compression-related functionality.</li>
+                        <li><strong>Engineering focus:</strong> file browsing, file creation, responsive mobile UX, and
                             team collaboration.</li>
-                        <li><strong>Trade-off:</strong> a small utility app rewards simple flows and predictable
-                            behavior more than feature volume.</li>
                     </ul>
                     <div class="project-actions">
                         <a class="btn btn-secondary" href="https://github.com/TahaFawzyElshrif/MangoExplorer"><i
@@ -419,13 +424,14 @@
                     <p class="project-type">ML fundamentals + package design</p>
                     <h3>SVM-Hinge Python Package</h3>
                     <p>
-                        Created a Python package for SVM classification by implementing hinge loss and subgradient
-                        descent. This project demonstrates mathematical implementation rather than only library usage.
+                        Developed a Python pipeline package implementing Support Vector Machine classification using
+                        hinge loss and subgradient descent, with gradient-based and convex optimization concepts.
                     </p>
                     <ul class="detail-list compact">
-                        <li><strong>Concepts:</strong> optimization, linear algebra, classification, packaging.</li>
-                        <li><strong>Lesson:</strong> implementing the algorithm clarifies model behavior and debugging
-                            better than treating ML as a black box.</li>
+                        <li><strong>Validation:</strong> tested and validated the implementation against Python's SVM
+                            implementation.</li>
+                        <li><strong>Concepts:</strong> hinge loss, subgradient descent, gradient-based optimization,
+                            convex optimization, and classification.</li>
                     </ul>
                     <div class="project-actions">
                         <a class="btn btn-secondary" href="https://github.com/TahaFawzyElshrif/SVM_hinge"><i
@@ -545,9 +551,10 @@
                 <div>
                     <h3>AI Engineer</h3>
                     <p>
-                        Led AI work focused on cost optimization and performance efficiency. Designed AI solutions with
-                        attention to computational cost, model accuracy, inference time, and alignment with project
-                        goals.
+                        Led a 5-member AI team for Care Now, an on-demand nurse platform, developing OCR, text
+                        standardization, and face verification solutions. Evaluated and selected models based on
+                        performance and cost, deployed AI services with FastAPI, and planned scalable integration with
+                        other teams. Technologies: FastAPI, Siamese Networks, LLM APIs, Azure.
                     </p>
                 </div>
             </article>
@@ -556,8 +563,9 @@
                 <div>
                     <h3>Cloud Computing Training - SRTA-CITY</h3>
                     <p>
-                        Studied virtualization, fault tolerance, IaaS, PaaS, SaaS, virtual machines, hypervisors, and
-                        distributed-system principles for availability and scalability.
+                        Gained practical knowledge of cloud infrastructure, virtualization, and fault-tolerant system
+                        design. Explored ML applications in data centers for monitoring and trend analysis, including
+                        energy efficiency and edge computing.
                     </p>
                 </div>
             </article>
