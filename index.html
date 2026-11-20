@@ -286,48 +286,85 @@
                     <img src="images/projects/codeBuddy.png" alt="CodeBuddy interface" loading="lazy">
                 </div>
             </article>
-            <article class="project-card featured" id="CodeBuddy">
-                <div class="project-body">
-                    <p class="project-type">LLM product + distributed backend</p>
-                    <h3>CodeBuddy</h3>
-                    <p>
-                        <strong>Problem:</strong> beginner developers can get blocked by unclear programming questions,
-                        unsuitable explanations, and difficulty choosing learning resources or hardware within their
-                        constraints.
-                    </p>
-                    <p>
-                        <strong>Solution:</strong> designed and implemented a full-stack AI learning platform that
-                        provides structured answers, personalized learning roadmaps, and hardware recommendations.
-                        Built a ReAct AI agent with RAG and tool integration, refined its handling of misunderstood and
-                        irrelevant queries, and manually tested LLM responses across 5 cases.
-                    </p>
-                    <ul class="detail-list">
-                        <li><strong>Architecture:</strong> HTML, CSS, Bootstrap, and JavaScript frontend with a scalable
-                            backend using Clean Architecture, FastAPI, PostgreSQL, Redis queueing, encryption,
-                            deployment, and monitoring.</li>
-                        <li><strong>AI engineering:</strong> combined RAG, tools, and ReAct agent logic to improve
-                            retrieval and task handling rather than relying on raw LLM generation.</li>
-                        <li><strong>Validation:</strong> manually tested the LLM responses across 5 cases and refined
-                            handling of misunderstood and irrelevant queries.</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span>FastAPI</span><span>Node.js</span><span>Redis</span><span>RAG</span><span>Firebase JWT</span><span>Sentry</span>
-                    </div>
-                    <div class="project-actions">
-                        <a class="btn btn-primary" href="https://huggingface.co/spaces/taha454/CodeBuddyAI"><i
-                                class="bi bi-cpu"></i>AI repo</a>
-                        <a class="btn btn-secondary" href="https://github.com/TahaFawzyElshrif/TF-CodebuddyLearn"><i
-                                class="bi bi-github"></i>Frontend</a>
-                        <a class="btn btn-secondary" href="https://tahafawzyelshrif.github.io/TF-CodebuddyLearn/"><i
-                                class="bi bi-box-arrow-up-right"></i>Live site</a>
-                        <a class="btn btn-secondary" href="https://drive.google.com/file/d/1bpWqOM5W3NkHBx1Pj0xFJKzEk0xQouJw/view"><i
-                                class="bi bi-eye"></i>Prototype</a>
-                    </div>
-                </div>
-                <div class="project-media">
-                    <img src="images/projects/codeBuddy.png" alt="CodeBuddy interface" loading="lazy">
-                </div>
-            </article>
+           
+<article class="project-card featured" id="AnkiAITutor">
+    <div class="project-body">
+        <p class="project-type">AI-powered learning tool + Anki extension</p>
+        <h3>Anki AI Vocabulary Tutor</h3>
+
+        <p>
+            <strong>Problem:</strong> memorizing English vocabulary through repetition alone
+            does not always translate into remembering and using words naturally in different
+            contexts.
+        </p>
+
+        <p>
+            <strong>Solution:</strong> developed an AI-powered vocabulary tutor integrated
+            into Anki Desktop, connecting Google Gemini with the user's previously studied
+            vocabulary to generate contextual practice and interactive learning activities.
+            Developed a standalone extension to make the integration easier to install and
+            maintain independently of Anki's core source code.
+        </p>
+
+        <ul class="detail-list">
+            <li>
+                <strong>Learning activities:</strong> implemented 3 interactive activities:
+                vocabulary recall, contextual paragraph generation, and word-choice exercises,
+                alongside a conversational AI assistant.
+            </li>
+            <li>
+                <strong>AI integration:</strong> integrated Google Gemini with Anki's
+                collection to retrieve studied vocabulary and use it as contextual input
+                for AI-generated exercises and conversations.
+            </li>
+            <li>
+                <strong>Application integration:</strong> built a Qt-based interface,
+                asynchronous operations, and secure API key management using the OS Keyring,
+                while following Anki's existing UI approach.
+            </li>
+            <li>
+                <strong>Extension development:</strong> converted the implementation into
+                a modular standalone extension, organized functionality into separate
+                modules, and bundled required dependencies to avoid manual package installation.
+            </li>
+        </ul>
+
+        <div class="tech-tags">
+            <span>Python</span>
+            <span>Google Gemini</span>
+            <span>Qt</span>
+            <span>Anki API</span>
+            <span>Keyring</span>
+        </div>
+
+        <div class="project-actions">
+            <a class="btn btn-primary"
+               href="https://drive.google.com/file/d/11JFPyGLdE5aRDHOcDiGz2Bk6J5tEkMkL/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-play-circle"></i> Demo
+            </a>
+
+            <a class="btn btn-secondary"
+               href="https://github.com/TahaFawzyElshrif/Anki-AI-Tutor"
+               target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i> Source Code
+            </a>
+
+            <a class="btn btn-secondary"
+               href="https://github.com/TahaFawzyElshrif/ANKI-AI-Tutor-Extension"
+               target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-puzzle"></i> Anki Extension
+            </a>
+        </div>
+    </div>
+
+    <div class="project-media">
+        <img src="images/projects/anki.jpg"
+             alt="Anki AI Vocabulary Tutor interface"
+             loading="lazy">
+    </div>
+</article>
+
 
             <div class="project-grid">
                 <article class="mini-project" id="AidMate">
